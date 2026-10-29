@@ -1,0 +1,2 @@
+import {motion} from 'framer-motion';
+export default function Section({id,eyebrow,title,children}){return <section id={id} className="section"><div className="container"><motion.div className="section-head" initial={{opacity:0,y:24}} whileInView={{opacity:1,y:0}} viewport={{once:true,amount:.2}} transition={{duration:.6}}><span className="eyebrow">{eyebrow}</span><h2>{title}</h2></motion.div>{children}</div></section>}
